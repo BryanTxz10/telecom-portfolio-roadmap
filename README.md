@@ -3,6 +3,7 @@ tags: [moc, telecom, roadmap]
 ---
 
 # 🛰️ Roadmap Técnico — Bryan Cucho Suyo
+
 *Ingeniero en Telecomunicaciones → Pre-Sales Engineer / Solution Architect / Platform Engineer
 
 Este vault es tu **mapa de progresión técnica** durante el ciclo de Ingeniero en Télécom Paris (filières **GIN + MODS**, 2026–2028), pensado para producir evidencia real (proyectos + certificaciones) que respalde tu candidatura a roles de **Pre-Sales Engineer**, **Solution Architect** o **Platform Engineer**.
