@@ -69,7 +69,7 @@ Este no es un proyecto técnico sino el que más pesa para **Pre-Sales Engineer*
 
 ## Cómo estructurar el repo hub en GitHub
 
-```
+```text
 telecom-portfolio/
 ├── README.md              ← este roadmap (o versión resumida con links)
 ├── 01-network-multisite-lab/    (submódulo o link a repo aparte)
