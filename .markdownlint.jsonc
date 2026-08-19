@@ -1,0 +1,8 @@
+{
+  // Desactivamos reglas poco útiles para documentación larga en prosa
+  "MD013": false,   // line-length: no tiene sentido limitar a 80 chars en párrafos largos
+  "MD033": false,   // no-inline-html: por si usas algún tag HTML suelto
+  "MD041": false,   // first-line-heading: nuestros .md empiezan con front matter YAML, no con un H1
+  "MD024": false,   // no-duplicate-heading: varios archivos comparten encabezados como "## Fase 1"
+  "MD025": false    // single-title: el front matter ya cuenta como "título" en varios archivos
+}
