@@ -205,3 +205,25 @@ Filtros aplicados:
 - **Solo investigación**: P10 y la parte BGP de P5.
 - **Datos privados**: ninguno de los 10. P7 necesita supuestos de precio de tránsito, lo que debilita su caso de negocio.
 - **Difícil de terminar para un principiante**: P9 y P10.
+
+## Fase 3 — Decisión
+
+Elegidos: **P1 `cloud-cost-carbon`**, **P4 `vuln-prioritizer`** y **P3 `llm-capacity-planner`**.
+
+Por qué estos tres y no otros:
+
+- **Cubren tres áreas y tres familias de puestos distintas**: FinOps/GreenOps (economía del cloud), DevSecOps (seguridad y cumplimiento) y MLOps/SRE (operar IA). En las ofertas francesas son tres búsquedas diferentes.
+- **Cada uno aporta un MODS diferente**: P1, estructura de mercado y precios; P4, riesgo con presupuesto limitado y regulación; P3, decisión bajo incertidumbre y econometría de pronósticos.
+- **Aprendizaje de IA y DevOps escalonado**: P4 enseña CI/CD y seguridad desde el día 1; P1 añade IaC y pipelines de datos programados; P3 añade ML de series temporales, MLflow y Kubernetes.
+- **Los tres usan datos oficiales y públicos, verificados en septiembre de 2026.**
+- P1 y P3 tocan ambos el cloud, pero no se solapan: P1 decide *dónde comprar* (proveedor, región, instancia) y P3 decide *cuánta capacidad y cuándo*. P5 (redes) queda como candidato natural para un cuarto proyecto.
+
+### Repos
+
+| Repo | Área | Qué funciona hoy | Semanas |
+| --- | --- | --- | --- |
+| [cloud-cost-carbon](https://github.com/BryanTxz10/cloud-cost-carbon) | FinOps / GreenOps | Ingesta de precios oficiales AWS (4 regiones UE, 3 431 filas), carbono por país (OWID/Ember) y coeficientes CCF; 27 tests; notebook con resultados reales | 5 (+1 opcional) |
+| [vuln-prioritizer](https://github.com/BryanTxz10/vuln-prioritizer) | DevSecOps | Ingesta de CISA KEV (1 729), registros CVE v5 con CVSS/SSVC (312 recientes) y dump OSV PyPI (25 767); clientes EPSS y consulta OSV probados sin red; 20 tests; notebook | 5 (+1 opcional) |
+| [llm-capacity-planner](https://github.com/BryanTxz10/llm-capacity-planner) | MLOps / SRE | Ingesta y agregación por segundo de 44,1 M de solicitudes reales (trazas Azure LLM 2023–2024) con < 700 MB de RAM; 10 tests; notebook | 6 |
+
+Cada repo trae: README en inglés con resumen en español, `docs/architecture.md`, `docs/roadmap.md` (plan semanal con recursos), `docs/business-case.md`, módulos esqueleto con firmas y docstrings, `notebooks/01_exploracion.ipynb` ejecutado, tests, `pyproject.toml`, `Makefile`, `.gitignore`, `.env.example`, licencia MIT, CI con ruff y pytest, y un workflow manual de verificación de fuentes. Los hitos del roadmap son issues etiquetados (data, model, infra, devops, docs, mods).
