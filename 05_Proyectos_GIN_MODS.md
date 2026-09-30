@@ -181,3 +181,27 @@ Cada propuesta tiene un lado técnico (GIN), un lado económico o estratégico (
 - **Datos.** RIPE Atlas, INSEE y precios cloud.
 - **IA/DevOps.** Python científico y algo de CI.
 - **Tiempo.** 6 semanas o más.
+
+## Fase 2 — Revisión crítica
+
+Criterios de 1 (débil) a 5 (fuerte). "Factibilidad" = 4–6 semanas, solo, con datos públicos y sin hardware especial. Puntajes después de aplicar las correcciones indicadas.
+
+| # | Proyecto | GIN | MODS | IA/DevOps | Factib. | Reclutador | Total /25 | Decisión y justificación |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P1 | cloud-cost-carbon | 4 | 5 | 4 | 5 | 5 | **23** | **Elegido.** Datos oficiales sin clave y FinOps muy demandado. El Data Act y la sostenibilidad le dan un MODS real. |
+| P4 | vuln-prioritizer | 4 | 4 | 5 | 5 | 5 | **23** | **Elegido.** DevSecOps en CI desde la semana 1 y NIS2/CRA como contexto. *Corrección*: el clasificador ML queda como extensión opcional; el núcleo es riesgo esperado + optimización. |
+| P3 | llm-capacity-planner | 4 | 4 | 5 | 4 | 5 | **22** | **Elegido.** Es el que más enseña (series temporales, Kubernetes, MLflow). *Corrección*: se simula primero en Python y Kubernetes entra recién en la semana 5, para no bloquearse. |
+| P2 | carbon-aware-scheduler | 4 | 4 | 5 | 4 | 4 | 21 | **Fusionado en P1** como extensión (carbono horario con RTE): comparten datos y área, y dos proyectos GreenOps diluyen el portafolio. |
+| P5 | fr-internet-dependency | 5 | 4 | 3 | 3 | 3 | 18 | **Corregido y en reserva.** La detección de anomalías BGP es investigación; queda solo la concentración (HHI). Además se apoya mucho en tu base de redes. Buen 4.º proyecto. |
+| P7 | cdn-cache-economics | 4 | 3 | 4 | 4 | 3 | 18 | **En reserva.** Se parece demasiado a tu experiencia de NOC de streaming, y los precios de tránsito no son públicos. |
+| P6 | ftth-rollout-economics | 2 | 5 | 3 | 4 | 3 | 17 | **En reserva.** Excelente para MODS (econometría), pero con poco DevOps y el lado GIN es más análisis que construcción. |
+| P9 | netops-copilot | 4 | 2 | 4 | 2 | 4 | 16 | **Descartado por ahora.** MODS débil, costo de API o CPU lento, Containerlab necesita privilegios y evaluar un LLM es difícil para un principiante. |
+| P8 | ran-energy-estimator | 3 | 4 | 2 | 3 | 2 | 14 | **Descartado.** Depende de tu base 5G y reproduce modelos de investigación; aporta poca práctica de IA o DevOps. |
+| P10 | edge-coinvest | 3 | 5 | 2 | 2 | 2 | 14 | **Descartado.** Es investigación (juegos coalicionales) con demanda sintética; a un reclutador de ingeniería le dice poco. |
+
+Filtros aplicados:
+
+- **Demasiado apoyado en la experiencia previa**: P8 (5G), P7 (CDN/streaming) y en parte P5 (redes).
+- **Solo investigación**: P10 y la parte BGP de P5.
+- **Datos privados**: ninguno de los 10. P7 necesita supuestos de precio de tránsito, lo que debilita su caso de negocio.
+- **Difícil de terminar para un principiante**: P9 y P10.
