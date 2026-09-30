@@ -24,6 +24,7 @@ Está diseñado para usarse en **Obsidian** (checkboxes, enlaces `[[ ]]`, tags) 
 - [[02_Roadmap|2. Roadmap progresivo (2026–2028)]]
 - [[03_Proyectos_Portafolio|3. Proyectos para el portafolio]]
 - [[04_Certificaciones|4. Certificaciones]]
+- [[05_Proyectos_GIN_MODS|5. Proyectos GIN × MODS respaldados por RMS (2026)]]
 
 ## Tu punto de partida (contexto usado para este plan)
 
